@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New Employee</title>
+</head>
+<body>
+    <h2>Create New Employee</h2>
+
+    <form method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" name="department" id="department" required><br><br>
+
+        <label for="salary">Salary:</label><br>
+        <input type="number" name="salary" id="salary" step="0.01" required><br><br>
+
+        <input type="submit" value="Create">
+    </form>
+
+    <br>
+    <a href="{{ url_for('list_employees') }}">🔙 Back to Employee List</a>
+</body>
+</html>
